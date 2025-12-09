@@ -1,7 +1,7 @@
-class Main_Weather {
+class MainWeather {
   double? temp, feelsLike, tempMin, tempMax, pressure, humidity, sea_level, grnd_level;
 
-  Main_Weather({
+  MainWeather({
     this.temp,
     this.feelsLike,
     this.tempMin,
@@ -12,8 +12,8 @@ class Main_Weather {
     this.grnd_level,
   });
 
-  factory Main_Weather.fromJson(Map<String, dynamic> json) {
-    return Main_Weather(
+  factory MainWeather.fromJson(Map<String, dynamic> json) {
+    return MainWeather(
       temp: double.parse(json["temp"]),
       feelsLike: json["feels_like"],
       tempMin: json["temp_min"],
@@ -27,14 +27,14 @@ class Main_Weather {
 
   Map<String, dynamic> toJson() {
     return {
-      "temp": this.temp,
-      "feels_like": this.feelsLike,
-      "temp_min": this.tempMin,
-      "temp_max": this.tempMax,
-      "pressure": this.pressure,
-      "humidity": this.humidity,
-      "sea_level": this.sea_level,
-      "grnd_level": this.grnd_level,
+      "temp": temp,
+      "feels_like": feelsLike,
+      "temp_min": tempMin,
+      "temp_max": tempMax,
+      "pressure": pressure,
+      "humidity": humidity,
+      "sea_level": sea_level,
+      "grnd_level": grnd_level,
     };
   }
 
