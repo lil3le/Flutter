@@ -8,9 +8,9 @@ class Wind {
   });
 
   Map<String, dynamic> toJson() => {
-    'speed': this.speed,
-    'deg': this.deg,
-    'gust': this.gust,
+    'speed': speed,
+    'deg': deg,
+    'gust': gust,
   };
 
   factory Wind.fromJson(Map<String, dynamic> json) {
