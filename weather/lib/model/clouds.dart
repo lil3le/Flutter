@@ -13,7 +13,7 @@ class Clouds {
 
   Map<String, dynamic> toJson() {
     return {
-      'all': this.all,
+      'all': all,
     };
   }
 }
